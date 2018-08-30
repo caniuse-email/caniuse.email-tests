@@ -6,7 +6,7 @@
   <!--[if !mso]><!-- -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!--<![endif]-->
-  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-head.css" />
+  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/assets/style-link-head.css" />
   <link rel="icon" href="https://caniuse.email/favicon.ico" />
   <meta name="format-detection" content="telephone=no;address=no;email=no" />
   <title>Can I Use Email Tests</title>
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-body.css" />
+  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/assets/style-link-body.css" />
   <style>
     body {
       background: #eee;
@@ -32,17 +32,19 @@
   </style>
   <hr />
 
-  <h3>CSS Background Properties</h3>
+  <h1>CSS Background Properties</h1>
 
-  <h6>background-color</h6>
+  <h4>background-color</h4>
   <table style="background-color: green;" height="30" width="200">
     <tr>
       <td height="30" width="200">&nbsp;</td>
     </tr>
   </table>
-  SUCCESS if box above is green
+  <div>SUCCESS if box above is green</div>
 
-  <h6>background-image</h6>
+  <hr>
+
+  <h4>background-image</h4>
   <table style="background-image: url(https://i.imgur.com/KWKApWg.gif);" height="240" width="320">
     <tr>
       <td height="240" width="320">&nbsp;</td>
@@ -50,14 +52,18 @@
   </table>
   SUCCESS if image above is displayed
 
-  <h6>background-position</h6>
+  <hr>
+
+  <h4>background-position</h4>
   <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-position: bottom,right;" height="140" width="220">
     <tr>
       <td height="140" width="220">&nbsp;</td>
     </tr>
   </table>
 
-  <h6>background-repeat</h6>
+  <hr>
+
+  <h4>background-repeat</h4>
   <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-repeat: no-repeat;" height="140" width="420">
     <tr>
       <td height="140" width="620">&nbsp;</td>
@@ -65,37 +71,51 @@
   </table>
   SUCCESS if image above is not repeated
 
-  <h6>background-size</h6>
+  <hr>
+
+  <h4>background-size</h4>
   <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-size: cover; border: 1px solid #000;" height="220"
     width="220">
     <tr>
       <td height="140" width="220">&nbsp;</td>
     </tr>
   </table>
-  SUCCESS if image above covers the table
+  <div>SUCCESS if image above covers the table</div>
 
   <hr />
 
-  <h2>CSS Box and Border Properties</h2>
+  <h1>CSS Box and Border Properties</h1>
 
   <hr />
 
-  <h2>HTML & Images</h2>
+  <h1>HTML & Images</h1>
 
-  <h5>iframe</h5>
+  <h4>Audio</h4>
+
+  <audio controls style="color: red;">
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg"> Your email client does not support the audio element.
+  </audio>
+  <div>SUCCESS if music can be played</div>
+
+
+  <hr>
+
+
+  <h4>iframe</h4>
   <iframe src="https://caniuse.email" width="300" height="200" style="border: 1px solid #000;">
   </iframe>
-  SUCCESS if caniuse.email displays above
+  <div>SUCCESS if caniuse.email displays above</div>
 
   <hr/>
 
-  <h5>Img Srcset</h5>
+  <h4>Img Srcset</h4>
   <img src="https://webkit.org/demos/srcset/image-src.png" alt="" height="200" width="200" srcset="https://webkit.org/demos/srcset/image-1x.png 1x, https://webkit.org/demos/srcset/image-2x.png 2x,
     https://webkit.org/demos/srcset/image-3x.png 3x, https://webkit.org/demos/srcset/image-4x.png 4x">
 
   <hr />
 
-  <h5>Picture</h5>
+  <h4>Picture</h4>
   <picture>
     <source src="svg.svg" type="image/svg+xml">
     <img src="https://webkit.org/demos/srcset/image-src.png" alt="MDN" height="200" width="200">
@@ -103,36 +123,37 @@
 
   <hr>
 
-  <h5>Video</h5>
-  <video>
-
+  <h4>Video</h4>
+  <video width="320" height="240" controls style="color: red;">
+    <source src="https://caniuse-email.github.io/caniuse.email-tests/assets/movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg"> Your browser does not support the video tag.
   </video>
 
 
   <hr />
 
-  <h2>Link Element</h2>
+  <h1>Link Element</h1>
 
-  <h5>Link in Head</h5>
-  <span class="test-link-head">SUCCESS If this text is green</span>
-
-  <hr />
-
-  <h5>Link in Body</h5>
-  <span class="test-link-body">SUCCESS If this text is green</span>
-
+  <h4>Link in Head</h4>
+  <div class="test-link-head">SUCCESS If this text is green</div>
 
   <hr />
 
-  <h2>Style Element</h2>
+  <h4>Link in Body</h4>
+  <div class="test-link-body">SUCCESS If this text is green</div>
+
+
+  <hr />
+
+  <h1>Style Element</h1>
 
   <h5>Style in Head</h5>
-  <span class="test-style-head">SUCCESS If this text is green</span>
+  <div class="test-style-head">SUCCESS If this text is green</div>
 
   <hr />
 
   <h5>Style in Body</h5>
-  <span class="test-style-body">SUCCESS If this text is green</span>
+  <div class="test-style-body">SUCCESS If this text is green</div>
 
 </body>
 
