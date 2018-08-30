@@ -5,23 +5,33 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <!--[if !mso]><!-- -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-head.css" type="text/css" />
   <!--<![endif]-->
   <meta name="format-detection" content="telephone=no;address=no;email=no" />
   <title>Can I Use Email Tests</title>
+  <style>
+    .test-style-head {
+      color: green;
+    }
+  </style>
 </head>
 
 <body>
+  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-body.css" type="text/css" />
   <style>
     body {
-      background: lightgray;
+      background: #eee;
       font-family: roboto, arial, helvetica;
       color: #333;
+    }
+
+    .test-style-body {
+      color: green;
     }
   </style>
   <hr />
 
-  <h5>CSS Background Properties</h5>
+  <h3>CSS Background Properties</h3>
 
   <h6>background-color</h6>
   <table style="background-color: green;" height="30" width="200">
@@ -29,31 +39,43 @@
       <td height="30" width="200">&nbsp;</td>
     </tr>
   </table>
+  SUCCESS if box above is green
 
   <h6>background-image</h6>
-  <table style="background-image:url(http://i.imgur.com/KWKApWg.gif)" height="240" width="320">
+  <table style="background-image: url(https://i.imgur.com/KWKApWg.gif);" height="240" width="320">
     <tr>
       <td height="240" width="320">&nbsp;</td>
     </tr>
   </table>
+  SUCCESS if image above is displayed
 
   <h6>background-position</h6>
-  <table style="background-image:url(http://i.imgur.com/KWKApWg.gif); background-position:bottom,right;" height="140" width="220">
+  <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-position: bottom,right;" height="140" width="220">
     <tr>
       <td height="140" width="220">&nbsp;</td>
     </tr>
   </table>
 
   <h6>background-repeat</h6>
-  <table style="background-image:url(http://i.imgur.com/KWKApWg.gif); background-repeat:no-repeat;" height="140" width="220">
+  <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-repeat: no-repeat;" height="140" width="420">
+    <tr>
+      <td height="140" width="620">&nbsp;</td>
+    </tr>
+  </table>
+  SUCCESS if image above is not repeated
+
+  <h6>background-size</h6>
+  <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-size: cover; border: 1px solid black;" height="220"
+    width="220">
     <tr>
       <td height="140" width="220">&nbsp;</td>
     </tr>
   </table>
+  SUCCESS if image above covers the table
 
   <hr />
 
-  <h5>CSS Box and Border Properties</h5>
+  <h3>CSS Box and Border Properties</h3>
 
   <hr />
 
@@ -68,6 +90,27 @@
     <source src="svg.svg" type="image/svg+xml">
     <img src="https://webkit.org/demos/srcset/image-src.png" alt="MDN" height="200" width="200">
   </picture>
+
+  <hr />
+
+  <h5>Link in Head</h5>
+  <span class="test-link-head">SUCCESS If this text is green</span>
+
+  <hr />
+
+  <h5>Link in Body</h5>
+  <span class="test-link-body">SUCCESS If this text is green</span>
+
+
+  <hr />
+
+  <h5>Style in Head</h5>
+  <span class="test-style-head">SUCCESS If this text is green</span>
+
+  <hr />
+
+  <h5>Style in Body</h5>
+  <span class="test-style-body">SUCCESS If this text is green</span>
 
 </body>
 

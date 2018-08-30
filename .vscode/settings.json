@@ -1,5 +1,19 @@
 {
   "editor.renderWhitespace": "all",
+  "html.suggest.ionic": false,
+  "html.suggest.angular1": false,
+  "htmlhint.options": {
+    "alt-require": true,
+    "attr-no-duplication": true,
+    "doctype-first": true,
+    "id-class-ad-disabled": true,
+    "id-unique": true,
+    "doctype-html5": false,
+    "spec-char-escape": false,
+    "space-tab-mixed-disabled": "space",
+    "src-not-empty": true,
+    "title-require": true
+  },
   "cSpell.words": [
     "amp",
     "anonymize",
