@@ -5,8 +5,9 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <!--[if !mso]><!-- -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-head.css" type="text/css" />
   <!--<![endif]-->
+  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-head.css" />
+  <link rel="icon" href="https://caniuse.email/favicon.ico" />
   <meta name="format-detection" content="telephone=no;address=no;email=no" />
   <title>Can I Use Email Tests</title>
   <style>
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-body.css" type="text/css" />
+  <link rel="stylesheet" href="https://caniuse-email.github.io/caniuse.email-tests/style-link-body.css" />
   <style>
     body {
       background: #eee;
@@ -65,7 +66,7 @@
   SUCCESS if image above is not repeated
 
   <h6>background-size</h6>
-  <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-size: cover; border: 1px solid black;" height="220"
+  <table style="background-image: url(https://i.imgur.com/KWKApWg.gif); background-size: cover; border: 1px solid #000;" height="220"
     width="220">
     <tr>
       <td height="140" width="220">&nbsp;</td>
@@ -75,9 +76,18 @@
 
   <hr />
 
-  <h3>CSS Box and Border Properties</h3>
+  <h2>CSS Box and Border Properties</h2>
 
   <hr />
+
+  <h2>HTML & Images</h2>
+
+  <h5>iframe</h5>
+  <iframe src="https://caniuse.email" width="300" height="200" style="border: 1px solid #000;">
+  </iframe>
+  SUCCESS if caniuse.email displays above
+
+  <hr/>
 
   <h5>Img Srcset</h5>
   <img src="https://webkit.org/demos/srcset/image-src.png" alt="" height="200" width="200" srcset="https://webkit.org/demos/srcset/image-1x.png 1x, https://webkit.org/demos/srcset/image-2x.png 2x,
@@ -91,7 +101,17 @@
     <img src="https://webkit.org/demos/srcset/image-src.png" alt="MDN" height="200" width="200">
   </picture>
 
+  <hr>
+
+  <h5>Video</h5>
+  <video>
+
+  </video>
+
+
   <hr />
+
+  <h2>Link Element</h2>
 
   <h5>Link in Head</h5>
   <span class="test-link-head">SUCCESS If this text is green</span>
@@ -103,6 +123,8 @@
 
 
   <hr />
+
+  <h2>Style Element</h2>
 
   <h5>Style in Head</h5>
   <span class="test-style-head">SUCCESS If this text is green</span>
