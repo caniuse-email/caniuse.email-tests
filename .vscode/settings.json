@@ -1,7 +1,5 @@
 {
   "editor.renderWhitespace": "all",
-  "html.suggest.ionic": false,
-  "html.suggest.angular1": false,
   "htmlhint.options": {
     "alt-require": true,
     "attr-no-duplication": true,
@@ -19,8 +17,6 @@
     "anonymize",
     "ay",
     "aysnc",
-    "box",
-    "c",
     "caniuse",
     "cellpadding",
     "cellspacing",
